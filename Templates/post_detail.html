@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+
+</head>
+<body>
+    <a href="{% url 'post_update' object.id %}"> Update Post</a>
+
+    <p>
+        {{object.title}}
+    </p>
+    <img src='/{{object.image}}'>
+
+    <a href="{% url 'post_delete' object.id %}"> Delete Post</a>
+
+</body>
+</html>
